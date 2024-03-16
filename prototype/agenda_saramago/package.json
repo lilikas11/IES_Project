@@ -1,0 +1,50 @@
+{
+    "name": "agenda_saramago",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+      "dev": "npx vite",
+      "build": "vite build",
+      "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+      "preview": "vite preview"
+    },
+    "dependencies": {
+      "@fortawesome/fontawesome-svg-core": "^6.4.2",
+      "@fortawesome/free-solid-svg-icons": "^6.4.2",
+      "@fortawesome/react-fontawesome": "^0.2.0",
+      "@headlessui/react": "^1.7.17",
+      "@heroicons/react": "^2.0.18",
+      "@material-tailwind/react": "^2.1.4",
+      "@react-google-maps/api": "^2.19.2",
+      "axios": "^1.6.2",
+      "babel-plugin-macros": "^3.1.0",
+      "dependencies": "0.0.1",
+      "flowbite": "^2.1.1",
+      "flowbite-react": "^0.6.4",
+      "leaflet": "^1.9.4",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "react-favicon": "^2.0.3",
+      "react-icons": "^4.11.0",
+      "react-leaflet": "^4.2.1",
+      "react-router-dom": "^6.18.0",
+      "roughjs": "^4.6.5",
+      "wired-elements": "^3.0.0-rc.6",
+      "wired-elements-react": "^0.1.5"
+    },
+    "devDependencies": {
+      "@types/react": "^18.2.15",
+      "@types/react-dom": "^18.2.7",
+      "@vitejs/plugin-react": "^4.0.3",
+      "autoprefixer": "^10.4.16",
+      "daisyui": "^4.4.20",
+      "eslint": "^8.45.0",
+      "eslint-plugin-react": "^7.32.2",
+      "eslint-plugin-react-hooks": "^4.6.0",
+      "eslint-plugin-react-refresh": "^0.4.3",
+      "postcss": "^8.4.32",
+      "tailwindcss": "^3.3.6",
+      "vite": "^4.4.5"
+    }
+  }

@@ -1,0 +1,5 @@
+.node_modules
+mysql
+node_modules
+data_gen/communication/__pycache__
+data_gen/simulator/__pycache__

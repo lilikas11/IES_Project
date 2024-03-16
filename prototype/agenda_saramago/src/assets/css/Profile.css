@@ -1,0 +1,197 @@
+body {
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+.profile-container {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-decoration: #758ca4;
+    margin: 40px auto;
+}
+
+.profile-details {
+    max-width: 400px;
+    width: 100%;
+    margin-left: 170px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+span {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.profile-name {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.profile-name-undefined {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: gray;
+    font-style: italic;
+}
+.profile-email {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.profile-email-undefined {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: gray;
+    font-style: italic;
+}
+.profile-phone {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.profile-phone-undefined {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: gray;
+    font-style: italic;
+}
+.profile-address {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.profile-address-undefined {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: gray;
+    font-style: italic;
+}
+.profile-bio {
+    font-size: 15px;
+    margin-bottom: 20px;
+    padding: 8px;
+    margin-right: 200px;
+}
+.profile-bio-undefined {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: gray;
+    font-style: italic;
+}
+.profile-birthday {
+    font-size: 18px;
+    margin-bottom: 20px;
+    
+}
+.profile-birthday-undefined {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: gray;
+    font-style: italic;
+}
+.profile-image img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.save-button,
+.edit-button {
+    background-color: #a7c7eb;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 50%;
+    font-weight:800;
+    font-size: 12px;
+}
+
+.save-button:hover,
+.edit-button:hover {
+    background-color: #758ca4;
+}
+
+
+.additional-content{
+    justify-content: center;
+    display:flex;
+    flex-direction: row;
+    margin: 30px 20px 20px 20px
+}
+.liked-events {
+    width: 600px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.liked-events h3 {
+    font-size: 24px;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.liked-events h3 svg {
+    margin-left: 10px;
+    color: #a7c7eb; /* Heart icon color */
+}
+.liked-events ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.liked-events li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.my-events {
+    width: 600px;
+    margin-top: 20px;
+    margin-left: 50px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.my-events h3 {
+    font-size: 24px;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+button {
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: buttonface;
+    box-sizing: border-box;
+    margin: 0em;
+    font: 400 11px system-ui;
+    padding: 1px 7px 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+  
+}
+

@@ -1,0 +1,21 @@
+{
+    "Dance company": ["Dança"],
+
+    "Theater company": ["Teatro"],
+
+    "Music company": ["Música"],
+
+    "Literature company": ["Leitura e Literatura"],
+
+    "Art company": ["Artes Visuais"],
+
+    "Cinema company": ["Cinema e Vídeo"],
+
+    "Gastronomy company": ["Gastronomia"],
+
+    "Profissional Development company": ["Carreira e Desenvolvimento Profissional"],
+     
+    "Education company": ["Educação e Aprendizagem"],
+
+    "Culture company": ["Cultura e Lazer"]
+}

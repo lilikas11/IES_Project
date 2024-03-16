@@ -1,0 +1,92 @@
+{
+    "Dança": [
+        "Ballet",
+        "Dança Contemporânea",
+        "Hip-Hop",
+        "Dança Folclórica",
+        "Tango",
+        "Salsa",
+        "Dança de Salão"
+    ],
+    "Teatro": [
+        "Drama",
+        "Comédia",
+        "Musical",
+        "Monólogo",
+        "Improviso",
+        "Teatro de Rua",
+        "Teatro Experimental"
+    ],
+    "Música": [
+        "Rock",
+        "Jazz",
+        "Clássica",
+        "Eletrônica",
+        "Folk",
+        "Ópera",
+        "Reggae"
+    ],
+    "Leitura e Literatura": [
+        "Poesia",
+        "Ficção",
+        "Não-Ficção",
+        "Lançamento de Livros",
+        "Leitura Dramatizada",
+        "Workshop de Escrita",
+        "Clube do Livro"
+    ],
+    "Artes Visuais": [
+        "Pintura",
+        "Escultura",
+        "Fotografia",
+        "Exposição de Arte",
+        "Instalação Artística",
+        "Grafite",
+        "Arte Digital"
+    ],
+    "Cinema e Vídeo": [
+        "Curta-Metragem",
+        "Documentário",
+        "Animação",
+        "Festival de Cinema",
+        "Cinema ao Ar Livre",
+        "Videoarte",
+        "Cine Debate"
+    ],
+    "Gastronomia": [
+        "Degustação",
+        "Culinária Internacional",
+        "Feira Gastronômica",
+        "Workshop de Culinária",
+        "Food Trucks",
+        "Festival de Comida",
+        "Harmonização de Vinhos"
+    ],
+    "Carreira e Desenvolvimento Profissional": [
+        "Feira de Carreiras",
+        "Networking",
+        "Orientação Profissional",
+        "Estágios e Trainees",
+        "Empreendedorismo Jovem",
+        "Desenvolvimento de Habilidades",
+        "Mentoria"
+    ],
+    "Educação e Aprendizagem": [
+        "Workshop Educacional",
+        "Tutoria e Aulas de Reforço",
+        "Ciência e Tecnologia",
+        "Educação Financeira",
+        "Saúde Estudantil",
+        "Sustentabilidade",
+        "Intercâmbio e Estudos no Exterior"
+    ],
+    "Cultura e Lazer": [
+        "Clubes e Sociedades Estudantis",
+        "Eventos Esportivos",
+        "Arte e Cultura no Campus",
+        "Música e Festivais",
+        "Jogos e Competições",
+        "Viagens e Excursões",
+        "Atividades de Voluntariado"
+    ]
+}

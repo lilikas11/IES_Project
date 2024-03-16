@@ -1,0 +1,76 @@
+version: "3.8"
+volumes:
+  datafiles:
+
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    hostname: mongodb
+    restart: unless-stopped
+    ports:
+      - 27017:27017
+    volumes:
+      - ./mongodb/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+
+  rabbitmq:
+    image: rabbitmq:3.11-management
+    container_name: rabbitmq
+    hostname: rabbitmq
+    ports:
+      - 15672:15672
+      - 5672:5672
+    healthcheck:
+      test: rabbitmq-diagnostics -q ping
+      interval: 30s
+      timeout: 30s
+      retries: 3
+
+  datagen:
+    build: ./datagen
+    container_name: datagen
+    restart: on-failure
+    depends_on:
+      mongodb:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    links:
+      - mongodb
+      - rabbitmq
+
+  web:
+    build: ./projies
+    image: projies
+    container_name: projies
+    restart: on-failure
+    depends_on:
+      mongodb:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    ports:
+      - 5001:8080
+    environment:
+      - SERVER_PORT=8080
+      - SPRING_PROFILES_ACTIVE=prod
+      - SPRING_APPLICATION_NAME=lockedin
+      - SPRING_DATA_MONGODB_AUTHENTICATION_DATABASE=lockedin
+      - SPRING_DATA_MONGODB_AUTO_INDEX_CREATION=true
+      - SPRING_DATA_MONGODB_HOST=mongodb
+      - SPRING_DATA_MONGODB_PORT=27017
+      - SPRING_DATA_MONGODB_USERNAME=user1
+      - SPRING_DATA_MONGODB_PASSWORD=user1
+      - SPRING_DATA_MONGODB_DATABASE=lockedin
+      - SPRING_RABBITMQ_HOST=rabbitmq
+
+  reactclient:
+    build: ./frontend
+    container_name: reactclient
+    ports:
+      - 3001:3000
+    stdin_open: true
+    depends_on:
+      - web
+    restart: unless-stopped
+    image: lockedin-frontend
